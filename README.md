@@ -60,8 +60,8 @@ Crear las siguientes 5 personas
 
 13) Utilizar el Campo "Buscar" de la parte superior para probar las siguientes busquedas (la cadena de texto se busca en el nombre y en el apellido)
 
-    a) Buscar: o - Deberían aparecer 3 resultados
-    b) Buscar: z - Deberian aparecer 4 resultados
+    a) Buscar: i - Deberían aparecer 3 resultados
+    b) Buscar: ez - Deberian aparecer 4 resultados
     c) Buscar: ina - Deberian aparecer 2 resultados
 
 
@@ -80,13 +80,12 @@ Crear los siguientes productos
 
 16) Utilizar el Campo "Buscar" de la parte superior para probar las siguientes busquedas (la cadena de texto se busca en el nombre, en la marca y en la categoria)
 
-    a) Buscar: o - Deberían aparecer 3 resultados
-    b) Buscar: z - Deberian aparecer 4 resultados
-    c) Buscar: ina - Deberian aparecer 2 resultados
+    a) Buscar: choco - Deberían aparecer 3 resultados
+    b) Buscar: Beb - Deberian aparecer 4 resultados
+    c) Buscar: negr - Deberian aparecer 2 resultados
 
 
 17) Entrar a cualquiera de los resultados de busqueda. Aparecera un detalle del producto que muestra: Nombre, Marca, Codigo de Barras, Stock y Precio
-
 
 18) Ingresar a la seccion de Tarjetas. Tambien deberia aparece el boton "+ Nueva Tarjeta".
 
@@ -114,9 +113,9 @@ Dar de alta los siguientes codigos
 
 19) Utilizar el Campo "Buscar" de la parte superior para probar las siguientes busquedas (los numeros buscados se buscan solo en los ultimos 9 digitos del codigo de tarjeta)
 
-    a) Buscar: o - Deberían aparecer 3 resultados
-    b) Buscar: z - Deberian aparecer 4 resultados
-    c) Buscar: ina - Deberian aparecer 2 resultados
+    a) Buscar: 1 - Deberían aparecer 11 resultados
+    b) Buscar: 13 - Deberia aparecer 1 resultado
+    c) Buscar: 501364 - Deberian aparecer 0 resultados
 
 20) Entrar a cualquiera de los resultados de busqueda. Aparecera un detalle del producto que muestra:
 Saldo, alumna que tiene la tarjeta (o "Sin alumna asociada" si la tarjeta no tiene dueña aun), codigo, fecha de activacion(fecha de alta) y fecha ultima modificacion
