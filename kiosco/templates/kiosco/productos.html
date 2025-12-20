@@ -43,11 +43,7 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
         {% for producto in productos %}
         <div class="col">
-            <!-- 
-               CAMBIO 1: Convertimos el div.card en a.card 
-               Agregamos 'text-decoration-none' para quitar el subrayado azul clásico de los links.
-               Agregamos una clase personalizada 'card-hover' (opcional) para efectos visuales.
-            -->
+
             <a href="{% url 'ver_producto' producto.pk %}" class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none" style="background-color: #fff; transition: transform 0.2s;">
                 
                 <div class="card-body d-flex flex-column p-4">
@@ -59,14 +55,11 @@
                     </div>
 
                     <!-- Nombre del Producto -->
-                    <!-- Centrado verticalmente gracias al margin-top y margin-bottom automáticos si fuera necesario, 
-                         pero aquí usamos márgenes fijos para limpieza -->
                     <h5 class="card-title fw-bold text-dark text-center my-3">{{ producto.nombre }}</h5>
                     
                     <!-- Sección inferior empujada hacia abajo (mt-auto) -->
                     <div class="mt-auto pt-3 border-top text-center">
                         <!-- Precio -->
-                         <!-- Usamos texto grande en lugar de botón deshabilitado para que se vea más limpio -->
                         <span class="fs-4 fw-bold text-dark">$ {{ producto.precio }}</span>
                     </div>
 

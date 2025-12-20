@@ -10,7 +10,6 @@
 
     <!-- Botón Volver -->
     <div class="mb-4">
-        <!-- Asumo que tienes una url llamada 'lista_alumnas' -->
         <a href="{% url 'lista_alumnas' %}" class="text-decoration-none text-muted fw-bold">
             <i class="bi bi-arrow-left"></i> Volver al listado
         </a>
@@ -41,7 +40,6 @@
                         <!-- Saldo de Cuenta -->
                         <div class="bg-white px-4 py-2 rounded-3 shadow-sm border border-1">
                             <span class="text-muted small text-uppercase fw-bold">Saldo Actual</span>
-                            <!-- Se asume que alumna.saldo existe, sino borrar -->
                             <h2 class="display-6 fw-bold text-dark mb-0">
                                 $ {{ alumna.saldo|default:"0.00" }}
                             </h2>

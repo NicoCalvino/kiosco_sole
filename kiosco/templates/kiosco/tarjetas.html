@@ -8,9 +8,7 @@
 
 <div class="container my-5">
 
-    <!-- CONTENEDOR CENTRADO PARA HACER LA LISTA MÁS ANGOSTA -->
     <div class="row justify-content-center">
-        <!-- Ajustamos el ancho aquí: col-lg-8 (66% del ancho) o col-xl-7 -->
         <div class="col-md-10 col-lg-8">
 
             <!-- Encabezado de la sección -->
@@ -56,7 +54,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% for tarjeta in tarjetas %} {# Asumiendo que la variable se llama 'tarjetas' y cada objeto tiene 'numero_tarjeta' y 'saldo' #}
+                            {% for tarjeta in tarjetas %} 
                             <tr>
                                 <!-- Columna: Número de Tarjeta -->
                                 <td class="ps-4 py-3">
@@ -71,15 +69,14 @@
                                 <!-- Columna: Saldo -->
                                 <td class="text-center">
                                     <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2">
-                                        ${{ tarjeta.saldo|floatformat:2 }} {# Formatea el saldo a 2 decimales y añade símbolo de dólar #}
+                                        ${{ tarjeta.saldo|floatformat:2 }}
                                     </span>
                                 </td>
 
                                 <!-- Columna: Botón de Acción -->
                                 <td class="pe-4 text-end">
-                                    {# Puedes añadir un enlace para ver detalles de la tarjeta o recargar saldo #}
                                     <a href="{% url 'ver_tarjeta' tarjeta.pk %}" class="btn btn-sm btn-light text-primary rounded-circle" title="Ver detalles">
-                                        <i class="bi bi-eye"></i> {# Icono de ojo para ver #}
+                                        <i class="bi bi-eye"></i>
                                     </a>
                                 </td>
                             </tr>
